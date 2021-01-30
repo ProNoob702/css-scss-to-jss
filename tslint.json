@@ -1,0 +1,33 @@
+{
+  "extends": ["tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["./src/serviceWorker.ts"]
+  },
+  "rules": {
+    "quotemark": [true, "double"],
+    "curly": false,
+    "no-implicit-dependencies": false,
+    "jsx-boolean-value": ["always", { "never": ["exact"] }],
+    "jsx-no-lambda": ["always", { "never": ["onClick"] }],
+    "object-literal-sort-keys": false,
+    "prettier/prettier": [true, "./.prettierrc"],
+    "no-shadowed-variable": false,
+    "member-access": [false],
+    "no-duplicate-variable": true,
+    "no-var-keyword": true,
+    "no-unused-expression": true,
+    "variable-name": [false, "ban-keywords", "check-format", "allow-pascal-case"],
+    "import-name": false,
+    "max-line-length": false,
+    "no-boolean-literal-compare": false,
+    "no-console": true,
+    "trailing-comma": [true, { "multiline": "never", "singleline": "never" }],
+    "align": false,
+    "no-increment-decrement": false,
+    "ter-func-call-spacing": false,
+    "ter-computed-property-spacing": false,
+    "no-this-assignment": false,
+    "ter-arrow-parens": false
+  },
+  "rulesDirectory": ["tslint-plugin-prettier", "node_modules/tslint-eslint-rules/dist/rules"]
+}
